@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+body {
+  --primary: #fe0000;
+  --primary-hover: #dd0000;
+  --dark: #000000;
+  --font: "Inter", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: var(--font);
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 24px 65px;
+  font-size: 18px;
+  background-color: var(--primary);
+  border: 0;
+  outline: none;
+  transition: background 0.2s linear;
+}
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.section-line {
+  font-size: 35px;
+  color: white;
+  background-color: var(--primary);
+  font-family: var(--font);
+  padding: 45px 35px;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  left: -100vw;
+  right: 0;
+}
+
+.section-inner {
+  display: flex;
+  gap: 60px;
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 500px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.red {
+  color: var(--primary);
+}
+
+.list-wrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 25px;
+}
+.list-wrapper .list-item {
+  font-size: 20px;
+  font-family: var(--font);
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.list-wrapper .list-item .dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--dark);
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

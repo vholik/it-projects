@@ -1,0 +1,23 @@
+.map {
+}
+
+.footer {
+  background-color: #111111;
+  width: 100%;
+  .footer_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    font-family: var(--font);
+    padding: 50px 0;
+    .column {
+      ul {
+        list-style: none;
+        li {
+          color: white;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

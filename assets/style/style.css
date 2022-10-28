@@ -82,4 +82,23 @@ body {
   height: 5px;
   background-color: var(--dark);
   border-radius: 50%;
+}
+
+.footer {
+  background-color: #111111;
+  width: 100%;
+}
+.footer .footer_inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  font-family: var(--font);
+  padding: 50px 0;
+}
+.footer .footer_inner .column ul {
+  list-style: none;
+}
+.footer .footer_inner .column ul li {
+  color: white;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.line {
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -170,6 +174,8 @@ a {
   right: 0;
   top: -25px;
   z-index: -1;
+  -o-object-position: 150%;
+     object-position: 150%;
 }
 
 .about {
@@ -203,4 +209,28 @@ a {
   color: white;
   font-weight: 500;
   font-size: 35px;
+}
+
+.map {
+  margin-top: 250px;
+  transform: translateY(5px);
+}
+
+.footer {
+  background-color: #111111;
+  width: 100%;
+}
+.footer .footer_inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  font-family: var(--font);
+  padding: 50px 0;
+}
+.footer .footer_inner .column ul {
+  list-style: none;
+}
+.footer .footer_inner .column ul li {
+  color: white;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

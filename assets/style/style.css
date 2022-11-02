@@ -3,7 +3,13 @@ body {
   --primary: #fe0000;
   --primary-hover: #dd0000;
   --dark: #000000;
+  --dark-hover: #414141;
+  --transition: 0.2s linear;
   --font: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -25,10 +31,23 @@ body {
   background-color: var(--primary);
   border: 0;
   outline: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
   transition: background 0.2s linear;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .btn:hover {
   background-color: var(--primary-hover);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }
 
 .section-line {
@@ -42,21 +61,36 @@ body {
   position: absolute;
   left: -100vw;
   right: 0;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .section-inner {
   display: flex;
   gap: 60px;
+  align-items: center;
+  padding-top: 250px;
+}
+.section-inner .col {
+  width: 50%;
+}
+.section-inner .col img {
+  width: 100%;
 }
 
 .title {
   font-size: 45px;
-  font-weight: 500px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .subtitle {
   font-size: 20px;
   line-height: 150%;
+  margin-top: 25px;
 }
 
 .red {
@@ -82,4 +116,91 @@ body {
   height: 5px;
   background-color: var(--dark);
   border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 50px 0 50px;
+}
+.header .right {
+  display: flex;
+  align-items: center;
+}
+.header .right .header-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 45px;
+  margin-right: 35px;
+}
+.header__list-item {
+  font-size: 16px;
+  font-family: var(--font);
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+.header__list-item:hover {
+  color: var(--dark-hover);
+}
+
+.main {
+  margin-top: 150px;
+  position: relative;
+}
+.main .main-title {
+  font-size: 64px;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: 60%;
+}
+.main .main-subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 250px;
+  margin-top: 35px;
+}
+.main .main-arrow {
+  margin-top: 75px;
+}
+.main .main-bg {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  z-index: -1;
+}
+
+.about {
+  margin-top: 100px;
+}
+.about .btn {
+  margin-top: 45px;
+}
+
+.outsorcing {
+  margin-top: 120px;
+}
+
+.recruitment {
+  margin-top: 120px;
+}
+.recruitment .btn {
+  margin-top: 45px;
+}
+
+.creation {
+  margin-top: 120px;
+}
+.creation .background {
+  background: url("../style/components/creation/images/bg-2.png");
+  padding: 150px 0;
+  margin-top: 100px;
+}
+.creation .background .background-text {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 35px;
 }/*# sourceMappingURL=style.css.map */

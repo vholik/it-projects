@@ -4,7 +4,13 @@ body {
   --primary: #fe0000;
   --primary-hover: #dd0000;
   --dark: #000000;
+  --dark-hover: #414141;
+  --transition: 0.2s linear;
   --font: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -26,10 +32,21 @@ body {
   background-color: var(--primary);
   border: 0;
   outline: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
   transition: background 0.2s linear;
+  width: fit-content;
   &:hover {
     background-color: var(--primary-hover);
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }
 
 .section-line {
@@ -43,21 +60,36 @@ body {
   position: absolute;
   left: -100vw;
   right: 0;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .section-inner {
   display: flex;
   gap: 60px;
+  align-items: center;
+  padding-top: 250px;
+  .col {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .title {
   font-size: 45px;
-  font-weight: 500px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .subtitle {
   font-size: 20px;
   line-height: 150%;
+  margin-top: 25px;
 }
 
 .red {

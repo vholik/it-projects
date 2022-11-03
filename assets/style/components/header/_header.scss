@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 50px 0 50px;
+  margin: 0 50px 0 50px;
+  padding-top: 25px;
   .right {
     display: flex;
     align-items: center;
@@ -38,7 +39,7 @@
 
 @media (max-width: 1400px) {
   .header {
-    margin: 25px 5% 0 5%;
+    margin: 0px 5% 0 5%;
   }
   .header-list {
     display: none !important;

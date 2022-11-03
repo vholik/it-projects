@@ -9,6 +9,29 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="mobile-menu">
+      <div class="close-btn">
+        <img src="./assets/images/close-btn.svg" alt="Close" />
+      </div>
+      <div class="container">
+        <div class="mobile-menu__inner">
+          <ul class="mobile-list">
+            <a href="#about"> <li class="mobile-menu__link">O nas</li></a>
+            <a href="#outsorcing">
+              <li class="mobile-menu__link">Outsourcing</li></a
+            >
+            <a href="#recruitment">
+              <li class="mobile-menu__link">Rekrutacja</li></a
+            >
+            <a href="#creation">
+              <li class="mobile-menu__link">Tworzenie oprogramowania</li></a
+            >
+            <a href="#school"> <li class="mobile-menu__link">SZKOLENIA</li></a>
+            <a href="#contact"> <li class="mobile-menu__link">Contact</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <img
         src="./assets/style/components/header/images/logo.svg"
@@ -24,7 +47,7 @@
         data-aos-delay="200"
       >
         <ul class="header-list">
-          <a href="#about"> <li class="header__list-item">O NAS</li></a>
+          <a href="#about"> <li class="header__list-item">O nas</li></a>
           <a href="#outsorcing">
             <li class="header__list-item">Outsourcing</li></a
           >
@@ -36,7 +59,7 @@
           >
           <a href="#school"> <li class="header__list-item">SZKOLENIA</li></a>
         </ul>
-        <a href="#footer" class="contact-btn"
+        <a href="#contact" class="contact-btn"
           ><button class="btn">Kontakt</button></a
         >
         <div class="burger">
@@ -446,18 +469,20 @@
       referrerpolicy="no-referrer-when-downgrade"
       class="map"
     ></iframe>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container">
         <div class="footer_inner">
           <div class="column">
             <h3>Mapa strony</h3>
             <br />
             <ul>
-              <a href=""><li>Start</li></a>
-              <a href=""><li>O nas</li></a>
-              <a href=""><li>Dokumenty</li></a>
-              <a href=""><li>Praca</li></a>
-              <a href=""><li>Kontakt</li></a>
+              <a href="#about"> <li class="link">O nas</li></a>
+              <a href="#outsorcing"> <li class="link">Outsourcing</li></a>
+              <a href="#recruitment"> <li class="link">Rekrutacja</li></a>
+              <a href="#creation">
+                <li class="link">Tworzenie oprogramowania</li></a
+              >
+              <a href="#school"> <li class="link">Szkolenia</li></a>
             </ul>
           </div>
           <div class="column">
@@ -469,36 +494,44 @@
               <li>IT-Project</li>
               <li>Bliźniacza 30</li>
               <li>54-614 Wrocław</li>
-              <li>bjaskolski@gmail.com</li>
+              <a href="mailto:bjaskolski@gmail.com"
+                ><li>bjaskolski@gmail.com</li></a
+              >
             </ul>
           </div>
           <div class="column">
             <h3>Znajdź nas</h3>
             <br />
             <div class="icons">
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/bartosz-jask%C3%B3lski-8019253b/"
+              >
                 <img
                   src="./assets/style/components/footer/images/footer_icons/Logo--instagram.svg"
-                  alt="Logo--instagram"
+                  alt="Instagram"
                 />
               </a>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/bartosz-jask%C3%B3lski-8019253b/"
+              >
                 <img
                   src="./assets/style/components/footer/images/footer_icons/Logo--skype.svg"
-                  alt="Logo--skype"
+                  alt="Skype"
                 />
               </a>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/bartosz-jask%C3%B3lski-8019253b/"
+              >
                 <img
                   src="./assets/style/components/footer/images/footer_icons/Logo--twitter.svg"
-                  alt="Logo--twitter"
+                  alt="Twitter"
               /></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-
+    <script src="./assets/scripts/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

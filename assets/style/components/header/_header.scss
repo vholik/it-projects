@@ -28,10 +28,11 @@
 
 .burger {
   display: none;
+  flex-direction: column;
+  gap: 5px;
   .line {
     border-top: 2px solid var(--dark);
-    width: 50px;
-    margin-bottom: 7px;
+    width: 34px;
   }
 }
 
@@ -46,7 +47,7 @@
     display: none;
   }
   .burger {
-    display: block;
+    display: flex;
   }
 }
 

@@ -25,3 +25,33 @@
     }
   }
 }
+
+.burger {
+  display: none;
+  .line {
+    border-top: 2px solid var(--dark);
+    width: 50px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header {
+    margin: 25px 5% 0 5%;
+  }
+  .header-list {
+    display: none !important;
+  }
+  .contact-btn {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 150px;
+  }
+}

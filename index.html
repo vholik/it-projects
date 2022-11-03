@@ -14,8 +14,15 @@
         src="./assets/style/components/header/images/logo.svg"
         alt="Logo"
         class="logo"
+        data-aos="fade-in"
+        data-aos-duration="500"
       />
-      <div class="right">
+      <div
+        class="right"
+        data-aos="fade-in"
+        data-aos-duration="500"
+        data-aos-delay="200"
+      >
         <ul class="header-list">
           <a href="#about"> <li class="header__list-item">O NAS</li></a>
           <a href="#outsorcing">
@@ -29,7 +36,14 @@
           >
           <a href="#school"> <li class="header__list-item">SZKOLENIA</li></a>
         </ul>
-        <a href="#footer"><button class="btn">Kontakt</button></a>
+        <a href="#footer" class="contact-btn"
+          ><button class="btn">Kontakt</button></a
+        >
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </div>
     </header>
     <div class="main">
@@ -47,24 +61,32 @@
               </div>
             </div>
           </h1>
-          <p class="main-subtitle">
+          <p
+            class="main-subtitle"
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-delay="400"
+          >
             IT team experienced in C#, Java, C++ and more
           </p>
           <img
+            data-aos="fade-down"
+            data-aos-duration="500"
+            data-aos-delay="400"
             src="./assets/style/components/main/images/arrow.svg"
             alt="Arrow"
             class="main-arrow"
           />
-          <img
+          <div
             src="./assets/style/components/main/images/bg.svg"
             alt="Background"
             class="main-bg"
-          />
+          ></div>
         </div>
       </div>
     </div>
     <section id="about" class="about">
-      <div class="container">
+      <div class="container" data-aos="fade-in" data-aos-duration="500">
         <div class="section-line">O nas</div>
       </div>
       <div class="container">
@@ -76,8 +98,18 @@
             />
           </div>
           <div class="col">
-            <h1 class="title">NASZ <span class="red">DREAM TEAM</span></h1>
-            <p class="subtitle">
+            <h1 class="title">
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                >
+                  NASZ <span class="red">DREAM TEAM</span>
+                </div>
+              </div>
+            </h1>
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               IT-PROJECT jest również twórcą i dostawcą rozwiązań
               informatycznych z zakresu optymalizacji podatkowej, szczególnie
               jeśli chodzi o obniżenie podatku od środków transportowych.
@@ -85,29 +117,49 @@
               i tworzenie deklaracji podatkowych DT1 dla wielu klientów oraz
               gmin jednocześnie.
             </p>
-            <p class="subtitle">
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               Nasi specjaliści są bardzo dobrze zaznajomieni z tematyką podatku
               od środków transportowych a także pozyskiwania klientów – firm
               transportowych, głównie dzięki współpracy z gminami, gdzie
               bezpośrednio uczestniczyli w tego typu działaniach lub takie
               działania wspierali.
             </p>
-            <button class="btn">Kontakt</button>
+            <button class="btn" data-aos="fade-in" data-aos-duration="500">
+              Kontakt
+            </button>
           </div>
         </div>
       </div>
     </section>
     <section class="outsorcing" id="outsorcing">
-      <div class="container">
+      <div class="container" data-aos="fade-in" data-aos-duration="500">
         <div class="section-line">OUTSORCING</div>
       </div>
       <div class="container">
         <div class="section-inner">
           <div class="col">
             <h1 class="title">
-              Outsourcing <span class="red">pracowników</span>
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                >
+                  Outsourcing
+                </div>
+              </div>
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                  data-aos-delay="200"
+                >
+                  <span class="red">pracowników</span>
+                </div>
+              </div>
             </h1>
-            <p class="subtitle">
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               Nie jest tajemnicą, że pozyskanie dobrych specjalistów IT na rynku
               jest niezwykle trudne. Każda firma działająca w tej branży boryka
               się z tym problmem. Oferujemy przede wszystkim outsourcing naszych
@@ -116,16 +168,18 @@
               partnerów co bardzo poszerza możliwości zaoferowania szerokiej
               grupy specjalistów IT.
             </p>
-            <p class="subtitle">
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               Nasi specjaliści pracują pośrednio lub bezpośrednio u klientów
               takich jak:
             </p>
-            <p class="subtitle bold">
+            <p class="subtitle bold" data-aos="fade-in" data-aos-duration="500">
               BZWBK, CubeITG, Credit Agricole, Core Services, e-Work, IBH, Opal
               FT, VOLVO, E-Monaco Instytucje Sektora Publicznego.
             </p>
-            <p class="subtitle">Posiadamy w swoich szeregach:</p>
-            <ul class="list-wrapper">
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
+              Posiadamy w swoich szeregach:
+            </p>
+            <ul class="list-wrapper" data-aos="fade-in" data-aos-duration="500">
               <li class="list-item">
                 <div class="dot"></div>
                 Testerów oprogramowania
@@ -161,12 +215,12 @@
               src="./assets/style/components/outsorcing/images/bg.png"
               alt="Background"
             />
-            <p class="subtitle">
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               Posiadamy nie tylko specjalistów IT ale również Handlowców i
               Marketingowców od pozyskiwania klientów, Ambasadorki Marki oraz
               specjalistów od podatku od środków transportowych.
             </p>
-            <ul class="list-wrapper">
+            <ul class="list-wrapper" data-aos="fade-in" data-aos-duration="500">
               <li class="list-item">
                 <div class="dot"></div>
                 Specjalista od podatku od środków transportowych
@@ -182,7 +236,7 @@
       </div>
     </section>
     <section class="recruitment" id="recruitment">
-      <div class="container">
+      <div class="container" data-aos="fade-in" data-aos-duration="500">
         <div class="section-line">REKRUTACJA</div>
       </div>
       <div class="container">
@@ -195,30 +249,80 @@
           </div>
           <div class="col">
             <h1 class="title">
-              Rekrutacja <span class="red">specjalistów IT</span> na rynku
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                >
+                  Rekrutacja
+                </div>
+              </div>
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                  data-aos-delay="200"
+                >
+                  <span class="red">specjalistów IT</span> na
+                </div>
+              </div>
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                  data-aos-delay="400"
+                >
+                  rynku
+                </div>
+              </div>
             </h1>
-            <p class="subtitle">
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               Zajmujemy się również wyszukiwaniem, rekrutacją i weryfikacją
               specjalistów IT dla naszych klientów, pod kątem bezpośredniego
               zatrudnienia ich u nich lub u ich parterów. Koszt takiego procesu
               zależny jest od doświadczenia i rodzaju specjalisty.
             </p>
-            <button class="btn">Kontakt</button>
+            <button class="btn" data-aos="fade-in" data-aos-duration="500">
+              Kontakt
+            </button>
           </div>
         </div>
       </div>
     </section>
     <section id="creation" class="creation">
-      <div class="container">
-        <div class="section-line">Tworzenie oprogramowania</div>
+      <div class="container" data-aos="fade-in" data-aos-duration="500">
+        <div class="section-line">
+          <p class="section-line__text">Tworzenie oprogramowania</p>
+        </div>
       </div>
       <div class="container">
         <div class="section-inner">
           <div class="col">
-            <div class="title">
-              Tworzenie <span class="red">oprogramowania</span>
-            </div>
-            <p class="subtitle">
+            <h1 class="title">
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                >
+                  Tworzenie
+                </div>
+              </div>
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                  data-aos-delay="200"
+                >
+                  <span class="red">oprogramowania</span>
+                </div>
+              </div>
+            </h1>
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               Jedną z kluczowych usług oferowaną przez IT-Project jest
               wytwarzanie dedykowanych rozwiązań informatycznych. Korzystając z
               doświadczonych specjalistów budujemy aplikację pod konkretne
@@ -242,7 +346,7 @@
       </div>
       <div class="background">
         <div class="container">
-          <p class="background-text">
+          <p class="background-text" data-aos="fade-in" data-aos-duration="500">
             Nie tylko tworzymy, ale również rozbudowujemy istniejące aplikację.
             Od 2014 roku stale supportujemy rozwijamy stworzoną przez nas
             aplikację JMS dla Norweskiej firmy IBH. Natomiast od 2016 roku
@@ -253,7 +357,7 @@
       </div>
     </section>
     <section class="school" id="school">
-      <div class="container">
+      <div class="container" data-aos="fade-in" data-aos-duration="500">
         <div class="section-inner">
           <div class="col">
             <img
@@ -262,12 +366,22 @@
             />
           </div>
           <div class="col">
-            <div class="title red">Szkolenia</div>
-            <p class="subtitle">
+            <div class="title red">
+              <div class="line">
+                <div
+                  class="line-inner"
+                  data-aos="slide-up"
+                  data-aos-duration="700"
+                >
+                  Szkolenia
+                </div>
+              </div>
+            </div>
+            <p class="subtitle" data-aos="fade-in" data-aos-duration="500">
               IT-Project buduje i szkoli zespoły testerskie, przygotowujemy do
               egzaminów ISTQB a szkolenia obejmują między innymi:
             </p>
-            <ul class="list-wrapper">
+            <ul class="list-wrapper" data-aos="fade-in" data-aos-duration="500">
               <li class="list-item">
                 <div class="dot"></div>
                 Projektowanie przypadków testowych

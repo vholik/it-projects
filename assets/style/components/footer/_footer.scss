@@ -1,5 +1,5 @@
 .map {
-  margin-top: 250px;
+  margin-top: 150px;
   transform: translateY(5px);
 }
 
@@ -21,5 +21,25 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .map {
+    height: 500px;
+  }
+  .footer .footer_inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 45px;
+  }
+}
+@media (max-width: 550px) {
+  .map {
+    height: 300px;
+  }
+}
+@media (max-width: 450px) {
+  .footer .footer_inner {
+    grid-template-columns: 1fr;
   }
 }

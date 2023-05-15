@@ -85,6 +85,19 @@ a {
     }
   }
 }
+.section-inner {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding-top: 250px;
+  .col-news {
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
 
 .title {
   font-size: 45px;
